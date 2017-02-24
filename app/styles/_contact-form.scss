@@ -1,0 +1,42 @@
+.contact-form {
+  padding: 0 $m-gutter;
+
+  &__title {
+    margin: 0 (-$m-gutter);
+    padding: 1rem;
+    background: $c-light-blue;
+    font-size: 1.6rem;
+    vertical-align: middle;
+  }
+
+  &__heading {
+    margin: 1rem 0 0.2rem;
+  }
+
+  &__submit {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    margin: 0 (-$m-gutter);
+    border: 0;
+    background: $c-green;
+    color: $c-font-white;
+    font-size: 1rem;
+  }
+}
+
+.input {
+  width: 12rem;
+  padding: 0.2rem;
+  border: 0;
+  border-bottom: 0.15rem solid $c-font-white;
+  outline: none;
+  background: $c-font-white;
+  font: inherit;
+  font-size: 1rem;
+
+  &:focus {
+    border-bottom-color: $c-green;
+  }
+}

@@ -1,6 +1,29 @@
 // @import 'yoga';
 // @import 'normalize';
 
-// $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
-// @import 'font-awesome';
+$fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
+$c-light-blue: #a1cffa;
+$c-dark-blue: #5aa7f0;
+$c-green: #86e26b;
+$c-red: #fc5a5a;
+$c-font-black: #313132;
+$c-font-white: #fffffe;
+$c-background: #eee;
+$m-gutter: 1rem;
+
+@import 'font-awesome';
 @import 'box-sizing';
+@import 'reset';
+@import 'contact-form';
+
+.app-grid {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: scroll;
+
+  &__item {
+    position: relative;
+    height: 100vh;
+    background: $c-dark-blue;
+  }
+}

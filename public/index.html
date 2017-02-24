@@ -4,9 +4,42 @@
   <meta charset="utf-8">
   <title>Contact Manager</title>
   <link rel="stylesheet" href="/app.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 </head>
 <body>
-  <h1>hey</h1>
+  <div class="app">
+    <div class="app-grid">
+      <div class="app-grid__item contact-container">
+        <form class="contact-form">
+          <h1 class="contact-form__title">New Contact</h1>
+          <div class="control">
+            <p class="contact-form__heading">First Name</p>
+            <input type="text" class="input contact-form__firstname">
+          </div>
+          <div class="control">
+            <p class="contact-form__heading">Last Name</p>
+            <input type="text" class="input contact-form__lastname">
+          </div>
+          <div class="control">
+            <p class="contact-form__heading">Street</p>
+            <input type="text" class="input contact-form__street">
+          </div>
+          <div class="control">
+            <p class="contact-form__heading">City</p>
+            <input type="text" class="input contact-form__city">
+          </div>
+          <div class="control">
+            <p class="contact-form__heading">State</p>
+            <input type="text" class="input contact-form__state">
+          </div>
+            <button class="button button-primary contact-form__submit">Submit</button>
+        </div>
+        </form>
+      <div class="app-grid__item">
+
+      </div>
+    </div>
+  </div>
   <script src="/app.js" charset="utf-8"></script>
 </body>
 </html>
