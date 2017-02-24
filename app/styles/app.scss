@@ -21,8 +21,6 @@ $m-gutter: 1rem;
 
 .app-grid {
   display: flex;
-  flex-wrap: nowrap;
-  overflow: scroll;
 
   &__item {
     position: relative;

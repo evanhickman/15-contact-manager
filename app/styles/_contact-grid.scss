@@ -7,13 +7,31 @@
   flex-wrap: wrap;
   margin: -$m-gutter;
 
-
   &-item {
     flex-basis: calc(100% / 3 - 2rem);
     flex-grow: 1;
     margin: $m-gutter;
+    padding: 0.5rem;
     border: 0.1rem solid $c-border;
     border-radius: 0.2rem;
     background: $c-font-white;
+
+    &:hover {
+      box-shadow: 0.05rem 0.1rem 0.7rem $c-border;
+    }
+  }
+}
+
+.contact-card {
+  &__name {
+    margin: 0;
+  }
+
+  &__delete {
+    width: 100%;
+    margin: -0.5rem;
+    padding: 0;
+    border: 0;
+    background: red;
   }
 }
