@@ -1,3 +1,7 @@
+.app-grid__item-contacts {
+  overflow: scroll;
+}
+
 .section {
   padding: $m-gutter;
 }
@@ -13,7 +17,8 @@
     margin: $m-gutter;
     padding: 0.5rem;
     border: 0.1rem solid $c-border;
-    border-radius: 0.2rem;
+    border-top-left-radius: 0.2rem;
+    border-top-right-radius: 0.2rem;
     background: $c-font-white;
 
     &:hover {
@@ -28,10 +33,19 @@
   }
 
   &__delete {
-    width: 100%;
+    display: block;
+    width: calc(100% + 1rem);
+    height: 2rem;
     margin: -0.5rem;
     padding: 0;
     border: 0;
-    background: red;
+    outline: 0;
+    background: $c-red;
+    color: $c-font-white;
+    font-size: 0.8rem;
+
+    &:active {
+      background: darken($c-red, 6);
+    }
   }
 }
