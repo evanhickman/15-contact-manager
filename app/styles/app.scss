@@ -21,6 +21,8 @@ $m-gutter: 1rem;
 
 .app-grid {
   display: flex;
+  height: 100vh;
+  overflow: hidden;
 
   &__item {
     position: relative;
