@@ -23,6 +23,7 @@
     padding: 1rem;
     background: $c-light-blue;
     font-size: 1.6rem;
+    box-shadow: 0.05rem 0.1rem 0.7rem $c-border;
     vertical-align: middle;
   }
 
@@ -58,4 +59,8 @@
   background: $c-font-white;
   font: inherit;
   font-size: 1rem;
+
+  &:focus {
+    border-bottom: 0.15rem solid $c-green-darker;
+  }
 }
