@@ -20,7 +20,7 @@ export default class AppController {
 
     this.store.dispatch({
       type: 'CONTACT@FIND_ALL',
-      contacts: JSON.parse(window.localStorage.contacts || '[]')
+      data: JSON.parse(window.localStorage.contacts || '[]')
     });
   }
 }

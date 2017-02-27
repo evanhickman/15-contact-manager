@@ -1,5 +1,6 @@
 .app-grid__item-contacts {
-  overflow: scroll;
+  flex-grow: 1;
+  overflow: auto;
 }
 
 .section {
@@ -14,20 +15,21 @@
   &-item {
     flex-basis: calc(100% / 3 - 2rem);
     flex-grow: 1;
-    margin: $m-gutter;
-    padding: 0.5rem;
-    border: 0.1rem solid $c-border;
-    border-top-left-radius: 0.2rem;
-    border-top-right-radius: 0.2rem;
-    background: $c-font-white;
-
-    &:hover {
-      box-shadow: 0.05rem 0.1rem 0.7rem $c-border;
-    }
   }
 }
 
 .contact-card {
+  margin: $m-gutter;
+  padding: 0.5rem;
+  border: 0.1rem solid $c-border;
+  border-top-left-radius: 0.2rem;
+  border-top-right-radius: 0.2rem;
+  background: $c-font-white;
+
+  &:hover {
+    box-shadow: 0.05rem 0.1rem 0.7rem $c-border;
+  }
+
   &__name {
     margin: 0;
   }
