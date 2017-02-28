@@ -1,7 +1,7 @@
 import FormView from '../view/form';
 import ListView from '../view/list';
 
-import { findAll } from './actions';
+import { findAll } from '../actions';
 
 export default class AppController {
   constructor(el, store) {
