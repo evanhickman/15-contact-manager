@@ -6,15 +6,14 @@ export function findAll() {
 }
 
 export function create(data) {
+  data.id = new Date();
+
   return {
     type: 'CONTACT@CREATE',
     data,
-    id: new Data()
   };
 }
 
 export function remove(id) {
-  return {
-    type: 'CONTACT@REMOVE'
-  };
+  return { type: 'CONTACT@REMOVE', id };
 }

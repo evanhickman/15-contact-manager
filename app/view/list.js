@@ -1,3 +1,5 @@
+import { remove } from '../actions';
+
 class ItemView {
   constructor(contact, store) {
     this.contact = contact;
@@ -14,6 +16,13 @@ class ItemView {
         <p class="contact-card__state"></p>
         <button class="button button-delete contact-card__delete">Delete</button>
       </div>`;
+  }
+
+
+  mounted() {
+    this.el.querySelector('.contact-card__delete').addEventListener('click', () => {
+      this.store.dispatch(remove(this.contact.id));
+    });
   }
 
   render() {
@@ -41,6 +50,7 @@ export default class ListView {
     const contacts = this.store.getState().contacts;
     contacts.forEach((data) => {
       const view = new ItemView(data, this.store);
+      view.mounted();
       view.render();
 
       this.el.appendChild(view.el);

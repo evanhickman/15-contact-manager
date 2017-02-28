@@ -1,6 +1,6 @@
 import { create } from '../actions.js';
 
-export default class ClassName {
+export default class ContactFormView {
   constructor(el, store) {
     this.el = el;
     this.store = store;
