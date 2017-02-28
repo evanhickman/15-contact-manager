@@ -1,0 +1,66 @@
+.app-grid__item-form {
+  position: relative;
+  flex-shrink: 0;
+  width: 18%;
+  background: $c-dark-blue;
+  box-shadow: 0.05rem 0.1rem 0.7rem $c-border;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  padding: 0 $m-gutter;
+
+  &__top {
+    flex-grow: 1;
+  }
+
+  &__title {
+    margin: 0 (-$m-gutter);
+    padding: 1rem;
+    background: $c-light-blue;
+    font-size: 1.6rem;
+    box-shadow: 0.05rem 0.1rem 0.7rem $c-border;
+    vertical-align: middle;
+  }
+
+  &__heading {
+    margin: 1rem 0 0.2rem;
+  }
+
+  &__bottom {
+    margin: 1.5rem -1rem 0;
+  }
+
+  &__submit {
+    width: 100%;
+    height: 2.8rem;
+    border: 0;
+    outline: none;
+    background: $c-green;
+    color: $c-font-white;
+    font-size: 1rem;
+
+    &:active {
+      background: $c-green-darker;
+    }
+  }
+}
+
+.input {
+  width: 100%;
+  padding: 0.2rem;
+  border: 0;
+  border-bottom: 0.15rem solid $c-font-white;
+  outline: none;
+  background: $c-font-white;
+  font: inherit;
+  font-size: 1rem;
+
+  &:focus {
+    border-bottom: 0.15rem solid $c-green-darker;
+  }
+}

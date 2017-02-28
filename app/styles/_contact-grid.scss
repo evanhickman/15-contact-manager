@@ -1,0 +1,53 @@
+.app-grid__item-contacts {
+  flex-grow: 1;
+  overflow: auto;
+}
+
+.section {
+  padding: $m-gutter;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -$m-gutter;
+
+  &-item {
+    flex-basis: calc(100% / 3 - 2rem);
+    flex-grow: 1;
+  }
+}
+
+.contact-card {
+  margin: $m-gutter;
+  padding: 0.5rem;
+  border: 0.1rem solid $c-border;
+  border-top-left-radius: 0.2rem;
+  border-top-right-radius: 0.2rem;
+  background: $c-font-white;
+
+  &:hover {
+    box-shadow: 0.05rem 0.1rem 0.7rem $c-border;
+  }
+
+  &__name {
+    margin: 0;
+  }
+
+  &__delete {
+    display: block;
+    width: calc(100% + 1rem);
+    height: 2rem;
+    margin: -0.5rem;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    background: $c-red;
+    color: $c-font-white;
+    font-size: 0.8rem;
+
+    &:active {
+      background: darken($c-red, 6);
+    }
+  }
+}

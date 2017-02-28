@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  background: $c-background;
+  color: $c-font-black;
+  font-family: 'Raleway', sans-serif;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+img {
+  align-self: center;
+  max-width: 100%;
+}
